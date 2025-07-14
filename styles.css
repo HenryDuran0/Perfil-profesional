@@ -1,0 +1,114 @@
+/* Generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 56px;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content .lead {
+    font-size: 1.5rem;
+}
+
+/* Títulos de sección */
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+/* Tarjetas de proyectos */
+.project-card {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: #3498db;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+/* Lista de habilidades */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skills-list li {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills-list i {
+    font-size: 2rem;
+    color: #3498db;
+}
+
+/* Formulario de contacto */
+.custom-btn {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.custom-btn:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content .lead {
+        font-size: 1.2rem;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
